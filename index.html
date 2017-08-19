@@ -13,11 +13,50 @@
 		<h1 id="heading" class="text-center">Trivia!</h1>
 	</div>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 text-center" id="timer"></div>
-			<div class="col-md-2"></div>
+		<div id="start-screen">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<button id="start-button">Press to Start!</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
 		</div>
+
+		<div id="game-screen" style="display: none"> 	
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center" id="timer"></div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row question">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 text-center">
+					<p id="q1"> How many squares are there on a chess board? </p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row answer">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 text-center">
+					<input type="radio" name="a1" value = "true"> 64 <br />
+					<input type="radio" name="a1" value = "false"> 49 <br />
+					<input type="radio" name="a1" value = "false"> 36 <br />
+					<input type="radio" name="a1" value = "false"> 81 <br />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			
+		</div>
+		<div id="gameOver-screen">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center" id="gameOver-display"></div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+
 	</div>
+	<script type="text/javascript" src="assets/javascript/triviaGame.js"></script>
 </body>
 </html>
