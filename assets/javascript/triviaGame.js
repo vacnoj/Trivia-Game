@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var timerValue = 10;
+	var timerValue = 20;
 
 	var correctAnswers = 0;
 
