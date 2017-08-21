@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var timerValue = 300;
+	var timerValue = 10;
 
 	var correctAnswers = 0;
 
@@ -22,16 +22,28 @@ $(document).ready(function() {
           		clearInterval(interval);
           		$("#game-screen").hide();
           		$("#gameOver-screen").show();
+          		isRight();
 
         	}
 		}
-	});
+	}); 
 
-	function triviaQuestions() {
-		var questions = []
+	function isRight() {
+		for (var i = 1; i < 4; i++) {
 
+			var buttonValue = $(`input[name=a${i}]:checked`).val();
+			if (buttonValue === "true") {
+				console.log(true);
+				correctAnswers++;
+			} else if (buttonValue === "false") {
+				console.log(false);
+				wrongAnswers++;
+			} else {
+				console.log("unanswered");
+				unanswered++;
+			}
+		}
 	}
-
 
 
 
