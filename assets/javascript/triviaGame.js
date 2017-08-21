@@ -25,6 +25,9 @@ $(document).ready(function() {
           		isRight();
 
         	}
+        $("#right").text(`Right: ${correctAnswers}`);
+        $("#wrong").text(`Wrong: ${wrongAnswers}`);
+        $("#unanswered").text(`Not answered: ${unanswered}`);
 		}
 	}); 
 
